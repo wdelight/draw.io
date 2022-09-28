@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-16T11:20:06.755Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="fqtMhNyxjuVYBYEvjtis" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-28T06:05:11.530Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="nGdSNUsYIoAd36v7l_6q" version="20.3.1" type="github" pages="2">
   <diagram id="0swR5Zxk2ZfYnhL6mhfc" name="第 1 页">
     <mxGraphModel dx="1426" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -379,6 +379,65 @@
         </mxCell>
         <mxCell id="k4RTbCSkaMkBeO745KK4-113" value="&lt;div&gt;商品二级分类查询：&lt;/div&gt;&lt;div&gt;&lt;br&gt;SELECT&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt; &lt;/span&gt;t1.`name` AS parentName,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt; &lt;/span&gt;t.`name` AS subName&lt;/div&gt;&lt;div&gt;FROM&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt; &lt;/span&gt;goods g&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt; &lt;/span&gt;LEFT JOIN goods_type t ON t.id = g.goods_type_id&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt; &lt;/span&gt;LEFT JOIN goods_type t1 ON t.parent_id = t1.id&lt;/div&gt;&lt;div&gt;WHERE g.goods_code = &#39;P2107080011&#39;;&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="760" y="1060" width="230" height="200" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="sA76EvqHOTEwp4Z_Txtr" name="第 2 页">
+    <mxGraphModel dx="1426" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PlHo_x0E7ArOJ4fd6YOe-1" value="hx_zxqy.member" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="410" y="1550" width="110" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="PlHo_x0E7ArOJ4fd6YOe-2" value="id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="PlHo_x0E7ArOJ4fd6YOe-1">
+          <mxGeometry y="30" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PlHo_x0E7ArOJ4fd6YOe-3" value="..." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="PlHo_x0E7ArOJ4fd6YOe-1">
+          <mxGeometry y="60" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PlHo_x0E7ArOJ4fd6YOe-4" value="shop_info_id" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="PlHo_x0E7ArOJ4fd6YOe-1">
+          <mxGeometry y="90" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PlHo_x0E7ArOJ4fd6YOe-5" value="hx_zxqy.shopinfo" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="1435" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="PlHo_x0E7ArOJ4fd6YOe-6" value="id" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="PlHo_x0E7ArOJ4fd6YOe-5">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PlHo_x0E7ArOJ4fd6YOe-7" value="..." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="PlHo_x0E7ArOJ4fd6YOe-5">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PlHo_x0E7ArOJ4fd6YOe-8" value="zw_oa.xgj_dept" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1340" width="170" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="PlHo_x0E7ArOJ4fd6YOe-9" value="id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="PlHo_x0E7ArOJ4fd6YOe-8">
+          <mxGeometry y="30" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PlHo_x0E7ArOJ4fd6YOe-10" value="..." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="PlHo_x0E7ArOJ4fd6YOe-8">
+          <mxGeometry y="60" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PlHo_x0E7ArOJ4fd6YOe-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="PlHo_x0E7ArOJ4fd6YOe-8" source="PlHo_x0E7ArOJ4fd6YOe-12" target="PlHo_x0E7ArOJ4fd6YOe-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PlHo_x0E7ArOJ4fd6YOe-12" value="parent_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="PlHo_x0E7ArOJ4fd6YOe-8">
+          <mxGeometry y="90" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PlHo_x0E7ArOJ4fd6YOe-13" value="jxm_shop_id" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="PlHo_x0E7ArOJ4fd6YOe-8">
+          <mxGeometry y="120" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PlHo_x0E7ArOJ4fd6YOe-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PlHo_x0E7ArOJ4fd6YOe-4" target="PlHo_x0E7ArOJ4fd6YOe-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PlHo_x0E7ArOJ4fd6YOe-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PlHo_x0E7ArOJ4fd6YOe-6" target="PlHo_x0E7ArOJ4fd6YOe-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PlHo_x0E7ArOJ4fd6YOe-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PlHo_x0E7ArOJ4fd6YOe-4" target="PlHo_x0E7ArOJ4fd6YOe-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PlHo_x0E7ArOJ4fd6YOe-17" value="&lt;div&gt;分公司、门店、区域三级组织结构：&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;SELECT&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;d3.id AS companyId,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;d3.NAME AS companyName,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;d2.id AS areaId,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;d2.`name` AS areaName,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;d1.id AS shopId,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;d1.NAME AS shopName&amp;nbsp;&lt;/div&gt;&lt;div&gt;FROM&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;xgj_dept d1&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;JOIN xgj_dept d2 ON d1.parent_id = d2.id&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;JOIN xgj_dept d3 ON d2.parent_id = d3.id&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;AND d3.parent_id = 1&amp;nbsp;&lt;/div&gt;&lt;div&gt;WHERE&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;d1.STATUS = 0&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;AND d2.STATUS = 0&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;AND d3.STATUS =0&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=middle;points=[];fillColor=#fff2cc;strokeColor=#d6b656;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="800" y="1180" width="250" height="290" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
